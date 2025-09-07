@@ -4,8 +4,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Google Spuf",
-  description: "Click here to open Google",
+  title: "Google",
+  description:
+    "Search the world's information, including webpages, images, videos and more. Goggel.in has many special features to help you find exactly what you're looking for.",
 };
 
 export default function RootLayout({
