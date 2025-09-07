@@ -1,7 +1,24 @@
 "use client";
 
+// Extend Window interface for Umami
+declare global {
+  interface Window {
+    umami?: {
+      track: (event: string, data?: Record<string, any>) => void;
+    };
+  }
+}
+
 export default function Home() {
   const handleGoogleClick = () => {
+    // Track the button click event in Umami
+    if (typeof window !== "undefined" && window.umami) {
+      window.umami.track("Button Click", {
+        target: "Google Link",
+        url: "http://bit.ly/3VDkjWa",
+      });
+    }
+
     window.open("http://bit.ly/3VDkjWa", "_blank");
   };
 

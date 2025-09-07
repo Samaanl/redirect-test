@@ -15,6 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+          <script
+            async
+            src="https://cloud.umami.is/script.js"
+            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+          ></script>
+        )}
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
