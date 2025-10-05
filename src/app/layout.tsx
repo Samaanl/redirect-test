@@ -4,9 +4,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Google",
+  title: "G.O.G.G.E.L - Gateway Of Global Growth, Education & Learning",
   description:
-    "Search the world's information, including webpages, images, videos and more. Goggel.in has many special features to help you find exactly what you're looking for.",
+    "Your gateway to global growth through education and learning. Discover blogs, tools, guides, and motivational content for entrepreneurs and lifelong learners.",
 };
 
 export default function RootLayout({
